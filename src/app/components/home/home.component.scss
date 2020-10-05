@@ -1,7 +1,23 @@
 @import '~assets/scss/colors';
+@import '~assets/scss/mixins';
 
 .container-fluid {
   background-color: $com-grey;
   height: 100vh;
   padding: 0;
+}
+
+section {
+  @include min-width-1200 {
+    padding-left: 195px;
+    padding-right: 195px;
+  }
+}
+
+.comunal-card {
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  min-height: 196px;
+  padding: 20px;
 }
